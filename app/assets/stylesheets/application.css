@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ .letter-box {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+}

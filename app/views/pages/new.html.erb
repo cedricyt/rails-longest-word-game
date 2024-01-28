@@ -1,0 +1,11 @@
+<h2>Ceci est la view</h2>
+<% @letters.each do |lettre| %>
+  <div class="letter-box"><%= lettre %></div>
+<% end %>
+
+<p>A vous de jouer</p>
+<form action="/answer" method="POST" data-turbo="false">
+  <input type="text" name="word">
+  <input type="submit" value="Try!" >
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
